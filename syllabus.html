@@ -1,0 +1,160 @@
+
+<h1>CSE 40771/60771 - Distributed Systems - Fall 2021</h1>
+<p>
+<b><a href=http://www.nd.edu/~dthain>Prof. Douglas Thain</a></b><br>
+Email: dthain at nd dot edu<br>
+Office: 384C Fitzpatrick<br>
+Office Hours: Wednesdays 1-3PM
+<p>
+<b>Course Web Page:</b> <a href=http://www.nd.edu/~dthain/courses/cse40771/fall2021>http://www.nd.edu/~dthain/courses/cse40771/fall2021</a>
+
+<p>
+A distributed system is any computer system consisting of multiple machines that work together on a common problem.  Distributed systems appear in many areas of computing, including cloud computing, mobile computing, edge computing, the internet of things, aerospace systems, and more.    Distributed systems have been both interesting and difficult to build because their components may be autonomous and highly failure-prone.   Students will learn the fundamental principles of distributed systems, study examples of current distributed systems, and build their own distributed systems from scratch.  Topics include concurrency, fault tolerance, replication, consistency, agreement.
+  Students will undertake a final project that involves building and evaluating a custom distributed system. Grading will be based on assignments, exams, and a final project. 
+<p>
+This will be a fun and challenging class for students who like to
+build working software systems.  Distributed systems connects the
+very practical aspects of software engineering (e.g. like how to handle
+a network disconnection) and the fundamental principles of computers
+(e.g. whether a partitioned system can reach agreement.)  The skills
+that you learn here will apply directly to advanced systems used in industry.
+<p>
+The theoretical aspects of distributed systems will be studied via the course textbook,
+<a href=https://www.distributed-systems.net/index.php/books/ds3>Marten van Steen and Andrew Tanenbaum, Distributed Systems 3rd edition, 2017.</a>
+You can order a physical copy of this book, or register online to download a PDF, as you prefer.
+
+<h2>Prerequisites</h2>
+
+<ul>
+<li> CSE 20232 (Data Structures) and CSE 20289 (Systems Programming) or equivalent.
+<li> Experience in the Python programming language.
+</ul>
+
+<h2>Course Outcomes</h2>
+Students successfully completing this course will be able to: 
+<dir>
+<li> Describe the architecture and operation of a variety of common distributed systems.<br>
+<i>Presented in course readings, evaluated in exams.</i>
+<li> Compare the architecture and operation of various distributed systems.<br>
+<i>Presented in class discussions, evaluated in exams.</i>
+<li> Describe how distributed systems are fundamentally different from standalone systems in matters such as naming, invocation, synchronization, and fault tolerance.<br>
+<i>Presented in course readings, evaluated in exams.</i>
+<li> Construct, test, and evaluate programs in a distributed environment.<br>
+<i>Presented, practiced, and evaluated in the practical assignments.</i>
+<li>Communicate technical results orally and in writing.<br>
+<i>Practiced in assignment writeups and final project talk.</i>
+</dir>
+
+<h2>Programming Assignments</h2>
+
+Five programming assignments are required, due approximately two weeks apart for the first ten weeks of the semester. The assignments together build towards an implementation of a scalable key-value store that could run in a cloud service or as a peer-to-peer system:
+
+<ol>
+<li> Measuring Fundamentals - Precisely measure the cost of fundamental operations in the system: function call, hash table read/write, network packet, file system I/O, process creation.
+<li> Remote Procedure Call - Build a system in Python for performing remote procedure call between processes. Carefully measure the performance and throughput of this system with multiple clients.
+<li> Logging and Recovery - Make the prior system persistent by implementing logging, recovery, and periodic log compression. Measure the performance of the system, observing outliers.
+<li> Replication - Improve the prior system by implementing one of several possible replication models, such as chain replication, primary-backups, round robin. Measure the performance and scalability.
+<li> Caching and Consistency - Improve the performance of the prior system by implementing a caching layer that provides a non-trivial consistency model. Measure the performance under various workloads.
+</ol>
+
+<h2>Final Project</h2>
+
+In the final project, students will propose, build, and measure a distributed system of their own design, which must make use of multiple techniques discussed in class to achieve a system that is robust and performant. Examples might include a distributed filesystem, a parallel programming model, or a peer-to-peer data routing system. The final submission will include a project report describing the design of the system.
+
+<h2>Graduate Students</h2>
+
+Graduate students taking CSE 60771 will have the following additional work. A selection of paper readings will be assigned that address the course topics in greater detail, balanced between "classic" results in distributed systems and specific case studies in distributed systems design. In addition, the final project report must be written as an academic suitable for submission to an academic conference, including a problem statement, survey of related work, system design, and a complete performance evaluation.
+
+<h2>How to Get the Most Out of Class</h2>
+
+To succeed in the class, you should attend all class meetings, take notes, and participate in class discussions. During most class sessions, I'll give a prepared lecture for about 30 minutes, and then we will shift into Q&amp;A or working on an example.
+The textbook is dense in places; sometimes a key algorithm may only occupy two pages in the book, but requires 30 minutes of class discussion to work out all the details. So, it works best if you read the textbook for a broad understanding before class, and then go back and review details and work some examples afterward.
+
+Because much of the class material involves working with system diagrams and examples, I will mostly work on the blackboard instead of presenting slide decks. I recommend that you take notes by sketching along with pen and paper: the simple act of note-taking exercises your mental muscles in a way that passive observation does not. If you prefer to take notes on your laptop or tablet, then that's fine too.
+
+However, I do ask that you refrain from using your laptops or phones for non-class related tasks during class time. I know it is tempting during a brief lull to respond to messages, check the news, etc, but even one laptop open can be an unavoidable distraction for other people in the class.   Please reserve this time for working together.
+
+<h2>Communications</h2>
+
+Assignments and the course schedule are available on the course website, and assignment grades will be posted in Sakai.
+
+We will be using Sakai to handle general Q&amp;A for the class. If you have a technical question that could be of interest to others, please post it there, so that others can benefit from the answers. You are welcome to post (or answer) questions anytime, and we will generally monitor and answer questions on weekday afternoons. (Keep in mind that we do go home at night, and so late-night questions will get answered the next day.)
+
+For questions about grades or anything else that just applies specifically to you, just email the instructor or TA directly.
+
+Office hours are a great time to get focused help on a tricky bit of code. We are happy to help you during that time -- just knock, come in, and introduce yourself. If you can't make any of the office hours, then send email to see if we can work out another time.
+
+
+<h2>Attendance</h2>
+
+Students are expected to attend all class meetings and exams,
+and turn in all assignments before the due date and time.
+Exceptions will only be made for the grave circumstances
+outlined in the duLac student life handbook.
+Students who must be absent due to participation in a
+University activity must confer with the instructor at the
+earliest possible date.
+
+<h2>Grading</h2>
+
+All assignments are due at the <b>beginning</b> of class on the date due.
+Late assignments will receive no credit.
+This includes assignments submitted after class has begun.
+<p>
+Paper assignments should be brought to class.
+Programming assignments will be turned in electronically by copying all
+required files to a "dropbox" directory.
+You are free to turn in assignments
+multiple times before the deadline expires.
+It would be a good habit to turn in an incomplete but working
+assignment on a daily basis.
+Thus, there is no excuse for failing to turn in an assignment:
+everyone should turn in <i>something</i> long before the deadline.
+Exceptions will be made only in grave circumstances.
+<p>
+Grades will be weighted as follows:
+<table>
+<tr><td> Regular Assignments <td> 55 %
+<tr><td> Final Project       <td> 15 %
+<tr><td> Midterm Exam        <td> 15 %
+<tr><td> Final Exam          <td> 15 %
+</table>
+
+<h2>A Note About the Assignments</h2>
+
+To undertake the class assignments, you will have to
+spend some time learning how to use each of these systems.
+The lectures will explain the general principles and direct you towards
+reference materials.  However, you will need to figure out some of the
+details on your own by reading manuals and experimenting
+on your own.  <b>Do not expect to succeed on the first try.</b>
+You may need to consult with the instructors during class, office hours,
+or via email to solve problems.  Thus, start working on each assignment
+right away, and do not leave it until the last minute.
+
+<h2>Health and Safety</h2>
+
+At the time of writing, we expect that campus life and operations will be closer to the pre-pandemic normal.
+However, we are all still getting used to being in close quarters again.
+If you aren't comfortable shaking hands or sitting closely together,
+just express your preferences politely, and be understanding of others around you.
+
+You are welcome to wear a mask, but it is not required to do so at this time.
+
+Office hours will be held simultaneously in person and via Zoom, and you can attend in whatever mode you prefer.
+
+If the public health situation changes, then we will adapt to new rules as necessary. 
+
+<h2>Academic Code of Honor</h2>
+
+Programming assignments and exams are to be completed individually. The final project is to be completed in pairs or small groups.
+
+Students are encouraged to seek out and consult reference manuals, books, websites, and other documentation that will help you to complete each programming assignment, provided that you indicate what sources you have used.  However, the result of such consultation should be an understanding of the material so that you can do it yourself.  All software development, experimental work, and writing of results must be by your own hands, in your own words.
+
+Notre Dame students are expected to abide by the <a href=http://honorcode.nd.edu/>Academic Code of Honor Pledge</a>: "As a member of the Notre Dame community, I will not participate in or tolerate academic dishonesty."
+
+<h2>Some Campus Resources</h2>
+
+If you require an accommodation for a disability, please first contact the <a href=http://sarabeadisabilityservices.nd.edu/>Sara Bea Center</a> (sarabeadisabilityservices.nd.edu) for a consultation, and we will be happy to work together on a solution.
+
+If you encounter a difficult life situation and don't know what to do, the <a href=http://ucc.nd.edu>University Counseling Center</a> (ucc.nd.edu) or the <a href=care.nd.edu>Care and Wellness Consultants</a> (care.nd.edu) can help and also connect you with other campus resources.

@@ -1,0 +1,140 @@
+<h1>Course Project for Distributed Systems</h1>
+
+The final project in this course will be open ended.  You will propose, carry out, and report upon a project singly or in groups of two students.  The project should be about twice the size or difficulty of one of the assigned class projects.  Your project must involve each of the following three elements:
+
+<dir>
+<li> <b>Build.</b> Your project must involve building a system of some kind.  You are encouraged to make use of existing systems and software packages, particularly those used in class.  However, your project must involve coding of some kind, in whatever language is suited for the task. 
+<li> <b>Evaluate.</b>  You must evaluate what you have built for both functional correctness and quantitative performance.  For correctness, you must develop a testing procedure that shows that your system operates correctly under all expected conditions.  For performance, you must define an appropriate metric -- latency, bandwidth, throughput -- and measure it across a range of configurations.
+<li> <b>Communicate.</b> You must present your work cogently by writing a paper and making an oral presentation.  The paper should describe the motivation, architecture, technical details, evaluation methods, and quantitative results of your project.  The oral presentation should summarize the most important aspects of the paper and give a demo of how it works, during the last week of class.
+</dir>
+More information on the requirements of each will be forthcoming.
+<p>
+If your project will make use of Amazon's EC2 service, you can make use of a academic grant from Amazon.
+Each member of the class can receive a $100 credit in Amazon web services, to be used to run virtual machines
+and other services for the class.  You will have to register with Amazon, enter your own credit card, and
+then enter a special credit code.  Talk to Prof. Thain to receive your credit code.
+
+<h2>Project Ideas</h2>
+
+The following are rough ideas for possible projects.  You are strongly
+encouraged to make use of software and systems employed in the required
+projects.  Part of your job will be to flesh out the details of the
+project before you begin work. You may do a project that is not on this list, but discuss it with Prof. Thain first.  
+<p>
+<dir>
+<li> <b>Convert a Real Application to WQ.</b>
+Take a real application that you use in your research, classes, or for fun,
+convert it to parallel form, and get it to run on as many processors as possible.
+Be sure to carefully measure the performance at a varying number of processors
+to produce a good speedup graph.
+<p>
+<li> <b>On Demand Allocation in Work Queue.</b>  As written, the Work Queue
+simply accepts whatever workers are started by external means.
+Modify the system to start and stop workers as needed, based on the
+number of jobs waiting in the queue.  (You may need to add some
+hysteresis to prevent oscillations.)  For a given application, 
+carefully quantify the tradeoff in performance vs resources consumed
+using pre-allocation vs on-demand allocation.
+<p>
+<li> <b>Distributed Storage Comparison.</b>  Do a head-to-head performance
+comparison of three storage systems - Chirp, Hadoop, and Amazon S3.
+Scale up from one client at a time, to multiple clients going at once.
+(Use Condor to get multiple clients going at once.)  Compare the throughput
+of large files, as well as the latency of small operations.
+<p>
+<li> <b>Elastic Condor Pool.</b>  When multiple users are active, the Condor pool
+can fill up, resulting in significant delays.  Build a system that monitors how 
+busy the Condor pool is. When load is sufficiently high, allocate new machines
+from EC2, and start Condor running to augment the pool.  Measure the performance,
+cost, and responsiveness of the system under load.
+<p>
+<li> <b>Virtual Machines on Condor.</b>  In many settings,
+it is necessary to precisely reproduce
+an execution environment: A particular program may only be compatible
+with a certain operating system version, or a particular application
+may require root privileges.  To make it easy to reproduce a given
+environment, design a virtual machine facility that allows the user
+to simply issue something like "runvm redhat4 emacs", causing a virtual
+machine of the given type to be created, submitted to Condor to allocate
+a CPU, and then connected to the submitting user's display via VNC.
+(Suggest that you use the QEMU virtual machine, which can be installed
+in your home directory.)  Measure the performance of several applications
+in the virtual machines, and figure out how to manage lots of VM images
+at the same time.
+<p>
+<li> <b>Hadoop on Condor (or Condor on Hadoop?).</b>  Hadoop has a high
+data processing capacity, but does not have a very rich scheduling policy.
+Come up with a method of using Condor to run jobs on Hadoop.
+(Or Hadoop jobs on Condor if you like.)  Find a way to express the same
+workload in both methods, and then compare the performance.
+<p>
+<li> <b>Peer to Peer Preservation.</b>  Design a peer-to-peer preservation system.
+Suppose that a user wishes to preserve a document forever.  If the user delivers
+it to any one node in the system, then that node should take active
+steps to communicate with other known peers to make further copies of
+the document.  Be careful to ensure that the system can recover from
+the loss of multiple nodes, but is also not causing continuous unnecessary network traffic.
+You may borrow ideas from other systems such as Gnutella
+Freenet, or Chord, provided that you implement the system yourself.
+Start by reviewing section 4.5.2 in the textbook.
+<p>
+<li><b>Chained Message Queueing System.</b>  Build a chained message
+queueing system like that described in section 4.3.  It should consist
+of a message forwarding process that reads files from a directory and then
+delivers them to an identical process running on another machine,
+which stores them in a directory where could be read by another
+forwarding process.  Make sure that your system can handle expected
+failure modes such as server crashes, network outages, full disks.
+Evaluate the throughput of your system on a large amount of data.
+<p>
+<li><b>Scaling up the Work Queue.</b>  Currently, the Work Queue is limited
+to about 1000 clients per master, usually limited by the number of TCP
+connections that can be active at any one time.  Modify the Work Queue
+to make it more scalable.  You  could change the master-worker protocol
+so that the worker disconnects while working on a work unit. Or, you could
+make the system hierarchical, with masters talking to sub-masters, and then to workers.  
+There are many ways to proceed, but be sure to preserve the fault-tolerance
+and other aspects of the system.
+<p>
+<li><b>Visualize Condor.</b>  Design a rich visualization tool for Condor,
+perhaps similar to the <a href=http://www.cse.nd.edu/~ccl/viz>Chirp visualization</a>.
+To be useful, it should display all sorts of information, such as the resources on
+each node, the jobs running, the owners of the jobs, and group or re-arrange the
+display based on the relationship between schedds and startds.
+</dir>
+
+<h2>Milestones</h2>
+
+<dir>
+<li><b>Tuesday, February 23rd.</b> - Turn in a one page project proposal
+that describes the project that you intend to do,
+what languages and resources will be necessary to carry it out,
+and how you intend to evaluate the work.  The proposal should be
+one to two pages of text.  The instructor will follow up with
+you to make sure that the project is of appropriate size and difficulty.
+<p>
+<li><b>Week of 29 March.</b> - Meet with the instructor to give a demo
+of what you have so far.  The project does not have to be complete, but
+you must definitely be able to show the main components working, and have
+ a plan for finishing the semester.
+<p>
+<li><b>Tuesday, 27 April</b> - Give a fifteen minute in-class
+presentation on your project.  (Time may vary once number of projects is known.)
+The talk should include an overview of
+the goal or problem, a detailed description of the structure of your
+system, an example of how your system operates, and an evaluation
+of the correctness and performance of your system.
+Your talk should be accompanied by 5-10 carefully designed and edited PowerPoint slides.
+<p>
+<li><b>Wednesday May 5th, Noon</b> - Turn in your code and the final paper.
+The code should be structured such that the instructor can build and
+execute it independently.  The paper should give an overview of the
+goal or the problem, a detailed description of the structure of your
+system, including a good diagram where appropriate, and an evaluation
+of the correctness and performance of the system.  There is no specific
+length requirement; the paper should be long enough to explain all
+of the necessary details.  The said, anything less than five pages
+is probably too short; anything longer than fifteen pages is probably too long.
+<b>Deposit your code and your paper in PDF or DOC format in your dropbox directory.</b>
+</dir>
+

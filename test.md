@@ -2,7 +2,7 @@
 layout: default
 title: CSE 40771 - Distributed Systems
 classes: wide
-
+---
 # CSE 40771/60771 - Distributed Systems - Fall 2021
 
 Fall 2021

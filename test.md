@@ -2,42 +2,27 @@
 layout: default
 title: CSE 40771 - Distributed Systems
 classes: wide
----
-<!doctype html>
-<html lang="en">
 
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>CSE 40771/60771 - Distributed Systems - Fall 2021</title>
-</head>
+# CSE 40771/60771 - Distributed Systems - Fall 2021
 
-<body>
-
-<h1>CSE 40771/60771 - Distributed Systems - Fall 2021</h1>
-
-<li> Fall 2021
-<li> <a href=http://www.nd.edu/~dthain>Prof. Douglas Thain</a>
-<li> MWF 9:25-10:30, Debartolo Hall
+Fall 2021
+<a href=http://www.nd.edu/~dthain>Prof. Douglas Thain</a>
+MWF 9:25-10:30, Debartolo Hall
 
 
-<p>
-<img align=left width=128 src=images/workflow.png>
 A distributed system is any computer system consisting of multiple machines that work together on a common problem.
 Distributed systems appear in many areas of computing, including cloud computing, mobile computing, edge computing,
 the internet of things, aerospace systems, and more.    Distributed systems have been both interesting and difficult to
 build because their components may be autonomous and highly failure-prone.
 Students will learn the fundamental principles of distributed systems, study examples of current distributed systems,
 and build their own distributed systems from scratch.
-</p>
-<p>
+
 This will be a fun and challenging class for students who like to
 build working software systems.  Distributed systems connects the
 very practical aspects of software engineering (e.g. like how to handle
 a network disconnection) and the fundamental principles of computers
 (e.g. whether a partitioned system can reach agreement.)  The skills
 that you learn here will apply directly to advanced systems used in industry.
-</p>
 
 <a href=syllabus.html><h2>Course Syllabus</h2></a>
 
@@ -162,8 +147,3 @@ Fall Break
 <tr><td>
 Final Exam TBA
 </table>
-
-</body>
-</html>
-
-

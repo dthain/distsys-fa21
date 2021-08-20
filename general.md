@@ -23,7 +23,7 @@ First, log into one of the student machines:
 ssh student00.cse.nd.edu
 ```
 
-Then, download and install Miniconda3 for Linux, if you haven't done so for another class:
+Then, download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for Linux, if you haven't done so for another class:
 
 ```
 curl https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh > miniconda.sh
@@ -69,19 +69,19 @@ and develop the skills for building new libraries of your own.
 
 To that end, you should become intimately familiar with the [standard library documentation](https://docs.python.org/3.9/library/index.html).  These modules in particular will be helpful:
 
-- (File and Directory Access)[https://docs.python.org/3.9/library/filesys.html]
-- (subprocess)[https://docs.python.org/3.9/library/subprocess.html]
-- (time)[https://docs.python.org/3.9/library/time.html]
-- (json)[https://docs.python.org/3.9/library/json.html]
-- (http.client)[https://docs.python.org/3.9/library/http.client.html]
-- (socket)[https://docs.python.org/3.9/library/socket.html]
+- [File and Directory Access](https://docs.python.org/3.9/library/filesys.html)
+- [subprocess](https://docs.python.org/3.9/library/subprocess.html)
+- [time](https://docs.python.org/3.9/library/time.html)
+- [json](https://docs.python.org/3.9/library/json.html)
+- [http.client](https://docs.python.org/3.9/library/http.client.html)
+- [socket](https://docs.python.org/3.9/library/socket.html)
  
 Now, there do exist various additional packages and libraries that provide
 implementations of some of the techniques that we discuss: remote procedure call,
 consensus, persistence, and so forth.  However, we won't be using those, because
 simply "installing package X" doesn't lead to any new understanding or experience.
 If you find yourself trying to solve a technical problem by installing a new 
-Conda package, then you are probably taking the wrong approach to the assignment.  Talk to the instructors to see if there is another approach.
+Conda package, then you are probably taking the wrong approach to the assignment.  Talk to the instructors to see if there is a better way.
 
 On a related note, exercise care when searching for solutions online.
 Q&amp;A sites like Stack Overflow can be helpful when trying to understand

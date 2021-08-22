@@ -57,13 +57,16 @@ Students successfully completing this course will be able to:
 
 <h2>Programming Assignments</h2>
 
-Five programming assignments are required, due one-two weeks apart for the first half of the semester. The assignments together build towards an implementation of a scalable key-value store that could run in a cloud service or as a peer-to-peer system:
+Six programming assignments are required, due one-two weeks apart for the first half of the semester. The assignments together build towards an implementation of a scalable key-value store that could run in a cloud service or as a peer-to-peer system:
 
 <ol>
 <li> Measuring Fundamentals - Precisely measure the cost of fundamental operations in the system: function call, hash table read/write, network packet, file system I/O, process creation.
 <li> Remote Procedure Call - Build a system in Python for performing remote procedure call between processes. Carefully measure the performance and throughput of this system with multiple clients.
-<li> Logging and Recovery - Make the prior system persistent by implementing logging, recovery, and periodic log compression. Measure the performance of the system, observing outliers.
-<li> Replication - Improve the prior system by implementing one of several possible replication models, such as chain replication, primary-backups, round robin. Measure the performance and scalability.
+<li> Persistence - Make the prior system persistent by implementing logging, recovery, and periodic log compression. Measure the performance of the system, observing outliers.
+<li> Robustness - Improve the prior system by making it more discoverable by a name service,
+handle multiple clients simultaneously, and be more robust to a variety of unexpected conditions.
+<li> Sharding - Improve the prior system by dividing up the storage space among multiple servers,
+allowing for multiple clients to be served simultaneously.  Measure the performance and scalability.
 <li> Caching and Consistency - Improve the performance of the prior system by implementing a caching layer that provides a non-trivial consistency model. Measure the performance under various workloads.
 </ol>
 
@@ -73,7 +76,7 @@ In the final project, students will propose, build, and measure a distributed sy
 
 <h2>Graduate Students</h2>
 
-Graduate students taking CSE 60771 will dig deeper into the theory of distributed systems. A selection of paper readings will be assigned that address the course topics in greater detail, balanced between "classic" results in distributed systems and specific case studies in distributed systems design.  The final project will take the form of an academic paper suitable for submission to a conference.
+Graduate students taking CSE 60771 will dig deeper into the theory of distributed systems. A selection of paper readings will be assigned that address the course topics in greater detail, balanced between "classic" results in distributed systems and specific case studies in distributed systems design.
 
 <h2>How to Get the Most Out of Class</h2>
 

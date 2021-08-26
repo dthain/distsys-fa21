@@ -20,8 +20,10 @@ your own environment with the correct version.
 First, log into one of the student machines:
 
 ```
-ssh student00.cse.nd.edu
+ssh <netID>@student00.cse.nd.edu
 ```
+
+Where `<netID>` is your Notre Dame netID. Use your account password as student machine login password.
 
 Then, download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for Linux, if you haven't done so for another class:
 
@@ -34,6 +36,8 @@ chmod 755 miniconda.sh
 Once Conda is installed, you should log out and log back in.
 Notice that your prompt should now have the prefix `(base)`,
 which indicates you are in the `base` Conda environment.
+If not, or you need to enter Conda environment after exiting it in the future,
+ use `conda activate`.
 
 Now, create an environment `distsys` just for this class:
 

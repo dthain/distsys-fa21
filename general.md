@@ -102,6 +102,22 @@ you can understand how to use it yourself.
 
 ## Turning in Assignments
 
-Instructions coming soon.
+To turn in each assignment, simply copy the requested materials into your dropbox directory on the student machines.
+Typically, this includes your source code and a written report.  Please do not turn in temporary files or large objects
+unless specifically requested.
 
+For example, the dropbox for assignment one is here:
 
+```
+/escnfs/courses/fa21-cse-40771.01/dropbox/NETID/a1
+```
+
+Graduate students enrolled in 60771 use this directory instead:
+
+```
+/escnfs/courses/fa21-cse-60771.01/dropbox/NETID/a1
+```
+
+Substitute your netid and the appropriate assignment number as needed.
+
+Note that the dropboxes are just plain old directories.  So, you can submit preliminary work at an early time and update it later if needed.  It's recommended that you `ls -l` the dropbox after submission, so you can verify that you submitted what you meant to.

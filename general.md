@@ -20,8 +20,10 @@ your own environment with the correct version.
 First, log into one of the student machines:
 
 ```
-ssh student00.cse.nd.edu
+ssh <netID>@student00.cse.nd.edu
 ```
+
+Where `<netID>` is your Notre Dame netID. Use your account password as student machine login password.
 
 Then, download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for Linux, if you haven't done so for another class:
 
@@ -30,6 +32,8 @@ curl https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh 
 chmod 755 miniconda.sh
 ./miniconda.sh
 ```
+
+Note: please enter `yes` for the last step of installation (initialize), which adds `conda` to `PATH`.
 
 Once Conda is installed, you should log out and log back in.
 Notice that your prompt should now have the prefix `(base)`,
@@ -59,6 +63,10 @@ To switch back to the default environment for another class,
 dthain@student02:~$ python -V
 Python 2.7.5
 ```
+
+When your prompt is clean, you are out of any Conda environment, using the original version of Python on the student machine.
+Now you may use `conda activate` or `conda activate base` to go back to `base` Conda environment.
+Similarly, as long as you have created `distsys`, you may use `conda activate distsys` to go to `distsys` Conda environment directly, which skips `base`.
 
 ## Focus on Standard Libraries
 

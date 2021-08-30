@@ -64,6 +64,10 @@ dthain@student02:~$ python -V
 Python 2.7.5
 ```
 
+When your prompt is clean, you are out of any Conda environment, using the original version of Python on the student machine.
+Now you may use `conda activate` or `conda activate base` to go back to `base` Conda environment.
+Similarly, as long as you have created `distsys`, you may use `conda activate distsys` to go to `distsys` Conda environment directly, which skips `base`.
+
 ## Focus on Standard Libraries
 
 The general approach for solving the programming assignments in this class is to

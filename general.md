@@ -33,11 +33,11 @@ chmod 755 miniconda.sh
 ./miniconda.sh
 ```
 
+Note: please enter `yes` for the last step of installation (initialize), which adds `conda` to `PATH`.
+
 Once Conda is installed, you should log out and log back in.
 Notice that your prompt should now have the prefix `(base)`,
 which indicates you are in the `base` Conda environment.
-If not, or you need to enter Conda environment after exiting it in the future,
- use `conda activate`.
 
 Now, create an environment `distsys` just for this class:
 

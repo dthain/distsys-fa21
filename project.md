@@ -31,7 +31,7 @@ during the last week of class.
 ## Project Ideas
 
 Following are some ideas to get you thinking.  You are welcome to modify one of these ideas,
-or to pick a different problem.
+or to pick a different problem, but talk to Prof. Thain first if you have something radically different in mind.
 
 **Peer to Peer Chat System** - Build a system that allows for interactive chat
 between many users, without requiring any centralized server.  Each participant
@@ -48,14 +48,21 @@ To access a file, a client must interact with the name node to locate it, and th
 Consider how to choose where to put files, where to replicate files, and how to deal with node outages.
 Measure both the latency and performance of the system as the number of clients and servers increases.
 
-**Chain Log Replication** Build an asynchronous chain-replicated version of your distributed hash table project.
+**Log Oriented Replication** - Build an asynchronous chain-replicated version of your distributed hash table project.
 Instead of having each node **wait** for the next node to respond (which would make the system very slow),
 make use of the transaction log.  As a single node applies changes to the transaction log, arrange for those
 log entries to be passed on to the next system in a row.  Careful: When is it safe for one node to compress
 its own log?  Consider how a new node joins the system, and what happens when a node crashes.
 Evaluate the throughput and latency of the system as the number of clients and servers increases.
 
-** Peer-to-Peer Hash Table ** - Implement a distributed hash table in a circular peer-to-peer fashion,
+**Distributed Interactive Game** - Create a simple multi-player interactive game, where a centralized
+server manages the game and players must interact from client nodes.  The game could be an old-school text
+adventure (explore rooms, collect items, etc) or something more graphical if you are so inclined.
+Design into the game some actions that are mutually exclusive, requiring the server to perform a total
+ordering on the actions and return the results to the client. For example, if user A roasts a marshmallow on a fire,
+while user B *concurrently* puts the fire out with water, what's the outcome?
+
+**Peer-to-Peer Hash Table** - Implement a distributed hash table in a circular peer-to-peer fashion,
 following the design of Chord, as described in the textbook.  Note that most of the description focuses
 on how to **find** items in the system.  This is important, of course, but you must also consider how
 nodes enter and leave the system, and arrange for data to be copied and preserved.
@@ -79,7 +86,7 @@ forwarding process.  Make sure that your system can handle expected
 failure modes such as server crashes, network outages, full disks.
 Evaluate the throughput of your system on a large amount of data.
 
-**Distributed Game-Playing Engine** - Pick a common board game  -- Chess, Othello, Go, etc -- that
+**Distributed Board Game Engine** - Pick a common board game  -- Chess, Othello, Go, etc -- that
 has many configurations and is thus computationally difficult for a computer to play effectively.
 Take an existing solver for this game that works on a single node, and build a distributed system
 that can run it on multiple nodes at the same time, playing against a human user.

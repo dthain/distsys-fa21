@@ -10,7 +10,7 @@ title: Course Project
 The final project in this course will be open ended.  You will propose, carry out, and report upon a project in groups of **two*** students.
 Projects must have the following elements:
 
-- **Build a New System** - Your project must involve constructing a system of some complexity
+- **Build a System** - Your project must involve constructing a system of some complexity
 that deals with some of the challenging problems of distributed systems, such as reliability, consistency,
 replication, and so forth. If you make use of existing software or packages, then you must build something
 substantially new on top, and not just plug a few things together. Python is recommended as a starting point, but you may use
@@ -33,14 +33,35 @@ during the last week of class.
 Following are some ideas to get you thinking.  You are welcome to modify one of these ideas,
 or to pick a different problem.
 
-# Peer-to-Peer Hash Table
+**Peer to Peer Chat System** - Build a system that allows for interactive chat
+between many users, without requiring any centralized server.  Each participant
+in the system should have their own independent node that passes chat messages
+back and forth.  Consider how to discover other nodes, pass messages to the rest
+of the system, put messages in a suitable order, and how to deal with disconnections
+and outages.  Measure the latency and throughput of message dissemination as
+the system grows in size.
 
-# Distributed Messaging System
+**Scalable Filesystem** - Build a file storage system that can scale up to a large
+number of nodes.  One approach to this is to create a single "name" node and multiple "storage" nodes.
+The name node can keep track of the filesystem tree, file names, and the location of the files on the storage nodes.
+To access a file, a client must interact with the name node to locate it, and then the storage node to access it.
+Consider how to choose where to put files, where to replicate files, and how to deal with node outages.
+Measure both the latency and performance of the system as the number of clients and servers increases.
 
-# Distributed Task Processing System
+**Chain Log Replication** Build an asynchronous chain-replicated version of your distributed hash table project.
+Instead of having each node **wait** for the next node to respond (which would make the system very slow),
+make use of the transaction log.  As a single node applies changes to the transaction log, arrange for those
+log entries to be passed on to the next system in a row.  Careful: When is it safe for one node to compress
+its own log?  Consider how a new node joins the system, and what happens when a node crashes.
+Evaluate the throughput and latency of the system as the number of clients and servers increases.
 
-# **Distributed Data Preservation System** - Design a peer-to-peer preservation system.
-Suppose that a user wishes to preserve a document forever.  If the user delivers
+** Peer-to-Peer Hash Table ** - Implement a distributed hash table in a circular peer-to-peer fashion,
+following the design of Chord, as described in the textbook.  Note that most of the description focuses
+on how to **find** items in the system.  This is important, of course, but you must also consider how
+nodes enter and leave the system, and arrange for data to be copied and preserved.
+
+**Distributed Data Preservation System** - Design a peer-to-peer preservation system.
+Suppose that a user wishes to preserve some document **forever**.  If the user delivers
 it to any one node in the system, then that node should take active
 steps to communicate with other known peers to make further copies of
 the document.  Be careful to ensure that the system can recover from
@@ -49,7 +70,7 @@ You may borrow ideas from other systems such as Gnutella
 Freenet, or Chord, provided that you implement the system yourself.
 Start by reviewing section 4.5.2 in the textbook.
 
-# Reliable Data Delivery System - Build a chained message
+**Reliable Data Delivery System** - Build a chained message
 queueing system like that described in section 4.3.  It should consist
 of a message forwarding process that reads files from a directory and then
 delivers them to an identical process running on another machine,
@@ -58,7 +79,13 @@ forwarding process.  Make sure that your system can handle expected
 failure modes such as server crashes, network outages, full disks.
 Evaluate the throughput of your system on a large amount of data.
 
-# **Distributed Game-Playing Engine**
+**Distributed Game-Playing Engine** - Pick a common board game  -- Chess, Othello, Go, etc -- that
+has many configurations and is thus computationally difficult for a computer to play effectively.
+Take an existing solver for this game that works on a single node, and build a distributed system
+that can run it on multiple nodes at the same time, playing against a human user.
+In this way, the difficulty of the "computer" player can be expanded to as many nodes as desired.
+Measure the time to reach a solution of a given quality, and the amount of the configuration space
+that can be explored in a fixed amount of time.
 
 ## Milestones
 
@@ -71,8 +98,6 @@ what languages and resources will be necessary to carry it out,
 and your plan for evaluating the system.  The proposal should be
 about two full pages of text.  The instructor will follow up with
 you to make sure that the project is of appropriate size and difficulty.
-
-**Progress Report**
 
 **Class Presentation**  During the penultimate week of class, you
 will give a ten minute presentation to the whole class.

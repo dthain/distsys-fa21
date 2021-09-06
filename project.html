@@ -7,25 +7,31 @@ title: Course Project
 
 ## Requirements
 
-The final project in this course will be open ended.  You will propose, carry out, and report upon a project in groups of two-four students.  Larger groups will be expected to accomplish more.  Projects must have the following elements:
+The final project in this course will be open ended.  You will propose, carry out, and report upon a project in groups of **two*** students.
+Projects must have the following elements:
 
-- **System Building** - Your project must involve constructing a software system of some complexity.
-If you make use of existing software or packages, then you should be building something substantially new,
-and not just plugging a few things together.  Python is recommended as a starting point, but you may use
+- **Build a New System** - Your project must involve constructing a system of some complexity
+that deals with some of the challenging problems of distributed systems, such as reliability, consistency,
+replication, and so forth. If you make use of existing software or packages, then you must build something
+substantially new on top, and not just plug a few things together. Python is recommended as a starting point, but you may use
 another language or environment if there is a strong reason to do so.
 
-- **Distributed Techniques** - Your project must make effective use of the techniques discussed in class.
-For example, if you have a replicated service, then you should be deliberate about choosing an appropriate
-replication technique (primary-backup, peer-to-peer, chain replication, etc) and implement it carefully.
-If the performance of your system requires caching, then you should carefully select a consistency model
-and implement it faithfully.  If your system is designed to be robust, then you should carefully identify
-possible failure modes and design appropriate robustness techniques.
+- **Evaluate its Performance** - The performance of your system must be evaluated carefully, in
+a manner appropriate to the nature of the system.  For example, if your system is designed to be
+scalable, then you should evaluate throughput and latency as the number of nodes increases.
+Or, if it is designed to be reliable, then you should evaluate its performance when nodes fail.
+Or, if it is designed to be consistent, then you should evaluate the latency of update propagation
+under various conditions.  Think carefully about the appropriate evaluation for your system.
 
-- **Performance Evaluation** - You must evaluate what you have built for both functional correctness and quantitative performance.  For correctness, you must develop a testing procedure that shows that your system operates correctly under all expected conditions.  For performance, you must define an appropriate metric -- latency, bandwidth, throughput -- and measure it across a range of configurations.
-
-- **Communication** - You must present your work cogently by writing a paper and making an oral presentation.  The paper should describe the motivation, architecture, technical details, evaluation methods, and quantitative results of your project.  The oral presentation should summarize the most important aspects of the paper and give a demo of how it works, during the last week of class.
+- **Present it Clearly** - Present your work cogently by writing a paper and making an oral presentation.
+The paper should describe the motivation, design, evaluation methods, and quantitative results of your project.
+The oral presentation should summarize the most important aspects of the paper and give a demo of how it works,
+during the last week of class.
 
 ## Project Ideas
+
+Following are some ideas to get you thinking.  You are welcome to modify one of these ideas,
+or to pick a different problem.
 
 # Peer-to-Peer Hash Table
 
@@ -56,33 +62,28 @@ Evaluate the throughput of your system on a large amount of data.
 
 ## Milestones
 
-- **Project Proposal** - Turn in a document that describes the overall
-shape of your project.  Be sure to include the project partners,
+- **Project Proposal - Friday, October 15th** -
+Turn in a document that describes the overall shape of your project.
+This should include the project partners, a high level description
+of the goals and structure of the system, identification of the key
+"distributed system" problem in the system, 
 what languages and resources will be necessary to carry it out,
-and how you intend to evaluate the work.  The proposal should be
-one to two pages of text.  The instructor will follow up with
+and your plan for evaluating the system.  The proposal should be
+about two full pages of text.  The instructor will follow up with
 you to make sure that the project is of appropriate size and difficulty.
 
-- **Progress Report**
+**Progress Report**
 
-- **Class Presentation**
+**Class Presentation**  During the penultimate week of class, you
+will give a ten minute presentation to the whole class.
+(Time may vary once number of projects is known.)
+The talk should include an overview of the goal or problem, the structure of your
+system, an example of how your system operates, and your results from evaluating
+the system so far. Your talk should be accompanied by 5-10 carefully designed
+and edited slides.  While this is a short talk, it will require careful preparation
+in order to be detailed, informative, and on time.
 
-<p>
-<li><b>Week of 29 March.</b> - Meet with the instructor to give a demo
-of what you have so far.  The project does not have to be complete, but
-you must definitely be able to show the main components working, and have
- a plan for finishing the semester.
-<p>
-
-Give a fifteen minute in-class
-presentation on your project.  (Time may vary once number of projects is known.)
-The talk should include an overview of
-the goal or problem, a detailed description of the structure of your
-system, an example of how your system operates, and an evaluation
-of the correctness and performance of your system.
-Your talk should be accompanied by 5-10 carefully designed and edited PowerPoint slides.
-<p>
-<li><b>Wednesday May 5th, Noon</b> - Turn in your code and the final paper.
+**Final Submission - Tuesday, December 7th** - Turn in your code and the final paper.
 The code should be structured such that the instructor can build and
 execute it independently.  The paper should give an overview of the
 goal or the problem, a detailed description of the structure of your
@@ -91,6 +92,5 @@ of the correctness and performance of the system.  There is no specific
 length requirement; the paper should be long enough to explain all
 of the necessary details.  The said, anything less than five pages
 is probably too short; anything longer than fifteen pages is probably too long.
-<b>Deposit your code and your paper in PDF or DOC format in your dropbox directory.</b>
-</dir>
+** Deposit your code and your paper in PDF or DOC format in your dropbox directory. **
 

@@ -110,18 +110,19 @@ you to make sure that the project is of appropriate size and difficulty.
 **Progess Report - Wednesday, November 17th** -
 Turn in a detailed report describing the overall design of your
 system and your progress towards building it.  This will be a substantial
-report of some length that will reuqire you to  think carefully about the
+report of some length that will require you to  think carefully about the
 details of the system design **before**
 writing every bit of code.  Your report should have the following sections:
 - **Purpose**. Describe the purpose of your system.  What is it designed to
-accomplish, and how will you know if it is working correctly?  If your project
-is similar to something that already exists (e.g. bitcoin) then explain carefully
+accomplish, and how will you know if it is working correctly?
+What are the essential challenges that must be overcome to deliver service to the user?
+If your project is similar to something that already exists (e.g. Bitcoin or Chord) then explain carefully
 how your work differs from the original.
 - **Architecture**.  Describe in detail how the internals of the system will work.
 Draw a detailed diagram of the system showing how the processes in the system relate,
 and examples of how they communicate in order to carry out the essential functions of
 the system.  Detail how the system handles names or identifiers: what do they mean,
-how are the generated, and how items in the system are discovered or located.
+how are they generated, how they are made unique, and how items in the system are discovered or located.
 Detail how the system is made reliable in the presence of failures: what happens
 if the network goes down or individual processes crash, and how the system responds.
 - **Progress**.  Describe your progress so far.  At this point, you should have

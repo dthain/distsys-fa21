@@ -107,12 +107,27 @@ about two full pages of text.  The instructor will follow up with
 you to make sure that the project is of appropriate size and difficulty.
 **Submit this via the Assignments tab in Sakai.**
 
-**Progess Report - Wednesday, November 17th** - Turn in a two-page
-report describing your progress so far.  Include a more detailed
-description of your system, including the details of the processes involved,
-the messages exchanged, and how the key "distributed systems" problems
-will be addressed.  Include a screenshot or other evidence to demonstrate
-that the basic technology is setup and working.  Indicate your progress
+**Progess Report - Wednesday, November 17th** -
+Turn in a detailed report describing the overall design of your
+system and your progress towards building it.  This will be a substantial
+report of some length that will reuqire you to  think carefully about the
+details of the system design **before**
+writing every bit of code.  Your report should have the following sections:
+- **Purpose**. Describe the purpose of your system.  What is it designed to
+accomplish, and how will you know if it is working correctly?  If your project
+is similar to something that already exists (e.g. bitcoin) then explain carefully
+how your work differs from the original.
+- **Architecture**.  Describe in detail how the internals of the system will work.
+Draw a detailed diagram of the system showing how the processes in the system relate,
+and examples of how they communicate in order to carry out the essential functions of
+the system.  Detail how the system handles names or identifiers: what do they mean,
+how are the generated, and how items in the system are discovered or located.
+Detail how the system is made reliable in the presence of failures: what happens
+if the network goes down or individual processes crash, and how the system responds.
+- **Progress**.  Describe your progress so far.  At this point, you should have
+the technology installed and working, and be able to demonstrate some basic functionality,
+even if not all of the features or capabilities are ready yet.  Include one or more
+screenshots to show that something is working.  Indicate your progress
 toward completion and any challenges or problems discovered along the way.
 **Submit this via the Assignments tab in Sakai.**
 
@@ -130,8 +145,10 @@ The code should be structured such that the instructor can build and
 execute it independently.  The paper should give an overview of the
 goal or the problem, a detailed description of the structure of your
 system, including a good diagram where appropriate, and an evaluation
-of the correctness and performance of the system.  There is no specific
-length requirement; the paper should be long enough to explain all
+of the correctness and performance of the system.  You can and should include
+material from your progress report regarding the architecture of the system,
+but of course the material should be updated and extended substantially.
+There is no specific length requirement; the paper should be long enough to explain all
 of the necessary details.  The said, anything less than five pages
 is probably too short; anything longer than fifteen pages is probably too long.
 **Submit your final report as a PDF via the Assignments tab in Sakai,

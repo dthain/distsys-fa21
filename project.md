@@ -133,7 +133,7 @@ toward completion and any challenges or problems discovered along the way.
 **Submit this via the Assignments tab in Sakai.**
 
 **Class Presentation** - During the penultimate week of class, you
-will give a **twelve** minute presentation to the whole class.
+will give a **ten** minute presentation to the whole class.
 The talk should include an overview of the goal or problem, the structure of your
 system, an example of how your system operates, and your results from evaluating
 the system so far.  Each member of the group should speak for part of the time.
@@ -142,11 +142,11 @@ and edited slides, containing detailed diagrams of your system.
 
 While this is a short talk, it will require careful preparation
 in order to be detailed, informative, and on time.  Practice multiple times
-together so that you can consistently finish between 11 and 12 minutes.
+together so that you can consistently finish between 9:30 and 9:59.
 Following each talk, there will be two minutes for questions from the audience.
 In the meantime, the next group should come up to the podium and load the next
 slide deck.  (Note that on Friday Dec 3rd, the transition will be immediate,
-in order to fit in all four talks.)
+in order to fit in all five talks.)
 
 **Attendance will be taken** during project talks, and will count for a portion
 of your grade. Please show courtesy to your classmates by arriving on time and

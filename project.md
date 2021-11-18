@@ -132,7 +132,9 @@ screenshots to show that something is working.  Indicate your progress
 toward completion and any challenges or problems discovered along the way.
 **Submit this via the Assignments tab in Sakai.**
 
-**Class Presentation** - During the penultimate week of class, you
+**Class Presentation**
+
+- During the penultimate week of class, you
 will give a **ten** minute presentation to the whole class.
 The talk should include an overview of the goal or problem, the structure of your
 system, an example of how your system operates, and your results from evaluating
@@ -140,7 +142,7 @@ the system so far.  Each member of the group should speak for part of the time.
 Your talk should be accompanied by approximately 10 carefully designed
 and edited slides, containing detailed diagrams of your system.
 
-While this is a short talk, it will require careful preparation
+- While this is a short talk, it will require careful preparation
 in order to be detailed, informative, and on time.  Practice multiple times
 together so that you can consistently finish between 9:30 and 9:59.
 Following each talk, there will be two minutes for questions from the audience.
@@ -148,11 +150,11 @@ In the meantime, the next group should come up to the podium and load the next
 slide deck.  (Note that on Friday Dec 3rd, the transition will be immediate,
 in order to fit in all five talks.)
 
-**Attendance will be taken** during project talks, and will count for a portion
+- **Attendance will be taken** during project talks, and will count for a portion
 of your grade. Please show courtesy to your classmates by arriving on time and
 giving them your attention.
 
-To ensure a minimum of technical difficulties, please prepare your slides using
+- To ensure a minimum of technical difficulties, please prepare your slides using
 Google Slides, make sure it is readable by anyone with the link, and email Prof. Thain
 with the link no later than 5PM the day before the presentation.  (It's fine if you
 continue to update the presentation after that point, but I need the link to assemble

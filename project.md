@@ -160,7 +160,7 @@ with the link no later than 5PM the day before the presentation.  (It's fine if 
 continue to update the presentation after that point, but I need the link to assemble
 the schedule.)
 
-**Final Submission - Tuesday, December 7th** - Turn in your code and the final paper.
+**Final Submission - Wednesday, December 8th at 5PM** - Turn in your code and the final paper.
 The code should be structured such that the instructor can build and
 execute it independently.  The paper should give an overview of the
 goal or the problem, a detailed description of the structure of your
